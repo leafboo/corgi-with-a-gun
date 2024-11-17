@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1ik7o6ubbnm5"]
+
+[ext_resource type="Script" path="res://characters/corgi.gd" id="1_bpwin"]
+[ext_resource type="Texture2D" uid="uid://bscbvc2883ybo" path="res://art/finishedArtwork/corgi.png" id="1_p8icm"]
+[ext_resource type="PackedScene" uid="uid://dhrxx2vp78jnw" path="res://guns/glock.tscn" id="3_uqn2d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dh36s"]
+size = Vector2(23, 5)
+
+[node name="corgi" type="CharacterBody2D"]
+script = ExtResource("1_bpwin")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_p8icm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 8.5)
+shape = SubResource("RectangleShape2D_dh36s")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="glock" parent="." instance=ExtResource("3_uqn2d")]
+position = Vector2(6, 7)

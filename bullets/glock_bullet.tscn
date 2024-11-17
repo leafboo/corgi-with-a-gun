@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqe7gmm4xd5ru"]
+
+[ext_resource type="Script" path="res://bullets/glock_bullet.gd" id="1_8ibel"]
+[ext_resource type="Texture2D" uid="uid://bhqs3pr41abj1" path="res://art/finishedArtwork/glockBullet.png" id="1_crl6c"]
+
+[node name="glockBullet" type="Node2D"]
+script = ExtResource("1_8ibel")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_crl6c")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0, 2.38419e-07)
+scale = Vector2(1.78125, 1.71875)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
