@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://cjgbd8qxg87k6"]
+[gd_scene load_steps=6 format=4 uid="uid://cjgbd8qxg87k6"]
 
 [ext_resource type="Texture2D" uid="uid://b1ox3ge2asbwi" path="res://art/finishedArtwork/ground.png" id="1_i26el"]
 [ext_resource type="PackedScene" uid="uid://b1ik7o6ubbnm5" path="res://characters/corgi.tscn" id="2_qple4"]
+[ext_resource type="PackedScene" uid="uid://bnhxmrui4ct3w" path="res://characters/dummy.tscn" id="3_jgrra"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bcp5m"]
 texture = ExtResource("1_i26el")
@@ -27,3 +28,15 @@ tile_set = SubResource("TileSet_upolt")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(-992, -672, -992, 608, 1056, 608, 1056, -672, -992, -672, -987, -746, 1184, -757, 1159, 691, -1082, 689, -1055, -729)
+
+[node name="dummy" parent="." instance=ExtResource("3_jgrra")]
+position = Vector2(281, -55)
+
+[node name="dummy2" parent="." instance=ExtResource("3_jgrra")]
+position = Vector2(394, -56)
+
+[node name="dummy3" parent="." instance=ExtResource("3_jgrra")]
+position = Vector2(522, -56)
+
+[node name="dummy4" parent="." instance=ExtResource("3_jgrra")]
+position = Vector2(655, -56)

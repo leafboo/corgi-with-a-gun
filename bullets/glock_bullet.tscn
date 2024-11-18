@@ -1,16 +1,28 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqe7gmm4xd5ru"]
+[gd_scene load_steps=5 format=3 uid="uid://dqe7gmm4xd5ru"]
 
-[ext_resource type="Script" path="res://bullets/glock_bullet.gd" id="1_8ibel"]
 [ext_resource type="Texture2D" uid="uid://bhqs3pr41abj1" path="res://art/finishedArtwork/glockBullet.png" id="1_crl6c"]
+[ext_resource type="Script" path="res://bullets/glock_bullet.gd" id="2_bt4ri"]
+[ext_resource type="PackedScene" uid="uid://d2spqn7fuy7me" path="res://overlap/hit_box.tscn" id="3_36trd"]
 
-[node name="glockBullet" type="Node2D"]
-script = ExtResource("1_8ibel")
+[sub_resource type="CircleShape2D" id="CircleShape2D_lnkti"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="glock_bullet" instance=ExtResource("3_36trd")]
+collision_layer = 8
+collision_mask = 4
+script = ExtResource("2_bt4ri")
+damage = 10
+speed = 300
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_lnkti")
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="1"]
+position = Vector2(9.53674e-07, -9.53674e-07)
+scale = Vector2(1.875, 1.875)
 texture = ExtResource("1_crl6c")
 
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(0, 2.38419e-07)
-scale = Vector2(1.78125, 1.71875)
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." index="2"]
+position = Vector2(-2, -1.19209e-07)
+scale = Vector2(3.09063, 2.98218)
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

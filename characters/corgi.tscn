@@ -8,6 +8,8 @@
 size = Vector2(23, 5)
 
 [node name="corgi" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_bpwin")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
