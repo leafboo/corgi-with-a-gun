@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dh36s"]
 size = Vector2(23, 5)
 
-[node name="corgi" type="CharacterBody2D"]
+[node name="Corgi" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 5
 script = ExtResource("1_bpwin")

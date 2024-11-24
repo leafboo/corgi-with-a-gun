@@ -2,11 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://bhqs3pr41abj1" path="res://art/finishedArtwork/glockBullet.png" id="1_crl6c"]
 [ext_resource type="Script" path="res://bullets/glock_bullet.gd" id="2_bt4ri"]
-[ext_resource type="PackedScene" uid="uid://d2spqn7fuy7me" path="res://overlap/hit_box.tscn" id="3_36trd"]
+[ext_resource type="PackedScene" uid="uid://d2spqn7fuy7me" path="res://hitAndHurtBox/hit_box.tscn" id="3_36trd"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lnkti"]
 
-[node name="glock_bullet" instance=ExtResource("3_36trd")]
+[node name="GlockBullet" instance=ExtResource("3_36trd")]
 collision_layer = 8
 collision_mask = 4
 script = ExtResource("2_bt4ri")

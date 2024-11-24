@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://rcybej55y2ta"]
+
+[ext_resource type="Script" path="res://characters/enemies/slime.gd" id="1_kff64"]
+[ext_resource type="Texture2D" uid="uid://0d7bxmbgaf0v" path="res://art/finishedArtwork/slime.png" id="2_mp13y"]
+[ext_resource type="PackedScene" uid="uid://vt3atwoemuku" path="res://hitAndHurtBox/hurt_box.tscn" id="3_yo2us"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j4gtk"]
+size = Vector2(16, 4)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_40d2c"]
+radius = 8.0
+
+[node name="Slime" type="CharacterBody2D"]
+script = ExtResource("1_kff64")
+max_hp = 50
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_j4gtk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_mp13y")
+
+[node name="HurtBox" parent="." instance=ExtResource("3_yo2us")]
+collision_layer = 4
+collision_mask = 8
+
+[node name="CollisionShape2D" parent="HurtBox" index="0"]
+shape = SubResource("CircleShape2D_40d2c")
+
+[connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
+
+[editable path="HurtBox"]
