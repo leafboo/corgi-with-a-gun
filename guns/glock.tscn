@@ -1,15 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://dhrxx2vp78jnw"]
 
 [ext_resource type="Script" path="res://guns/glock.gd" id="1_wj2t4"]
-[ext_resource type="Texture2D" uid="uid://bjboimyobifrl" path="res://art/finishedArtwork/glock.png" id="2_6cwkk"]
+[ext_resource type="Texture2D" uid="uid://bjboimyobifrl" path="res://art/finishedArtwork/guns/glock/glock.png" id="2_q58p0"]
 
 [node name="Glock" type="Node2D"]
 script = ExtResource("1_wj2t4")
+ammo_capacity = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(6, -1)
 scale = Vector2(0.799805, 0.799805)
-texture = ExtResource("2_6cwkk")
+texture = ExtResource("2_q58p0")
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(19, -4)

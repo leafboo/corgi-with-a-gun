@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b1ik7o6ubbnm5"]
 
 [ext_resource type="Script" path="res://characters/corgi.gd" id="1_bpwin"]
-[ext_resource type="Texture2D" uid="uid://bscbvc2883ybo" path="res://art/finishedArtwork/corgi.png" id="1_p8icm"]
+[ext_resource type="Texture2D" uid="uid://bscbvc2883ybo" path="res://art/finishedArtwork/corgi/corgi.png" id="2_5f6pu"]
 [ext_resource type="PackedScene" uid="uid://dhrxx2vp78jnw" path="res://guns/glock.tscn" id="3_uqn2d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dh36s"]
@@ -13,7 +13,7 @@ collision_mask = 5
 script = ExtResource("1_bpwin")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_p8icm")
+texture = ExtResource("2_5f6pu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, 8.5)

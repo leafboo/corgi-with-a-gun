@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://rcybej55y2ta"]
 
 [ext_resource type="Script" path="res://characters/enemies/slime.gd" id="1_kff64"]
-[ext_resource type="Texture2D" uid="uid://0d7bxmbgaf0v" path="res://art/finishedArtwork/slime.png" id="2_mp13y"]
+[ext_resource type="Texture2D" uid="uid://0d7bxmbgaf0v" path="res://art/finishedArtwork/enemies/slime.png" id="2_50rg3"]
 [ext_resource type="PackedScene" uid="uid://vt3atwoemuku" path="res://hitAndHurtBox/hurt_box.tscn" id="3_yo2us"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j4gtk"]
@@ -19,7 +19,7 @@ position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_j4gtk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_mp13y")
+texture = ExtResource("2_50rg3")
 
 [node name="HurtBox" parent="." instance=ExtResource("3_yo2us")]
 collision_layer = 4

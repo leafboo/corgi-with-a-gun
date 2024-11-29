@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0d7bxmbgaf0v"
-path="res://.godot/imported/slime.png-551b71be3787b7e67b33e2f3b10746b3.ctex"
+uid="uid://bhqs3pr41abj1"
+path="res://.godot/imported/glockBullet.png-4627382936b201f58e41a9170d4e2bde.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/finishedArtwork/slime.png"
-dest_files=["res://.godot/imported/slime.png-551b71be3787b7e67b33e2f3b10746b3.ctex"]
+source_file="res://art/finishedArtwork/guns/glock/glockBullet.png"
+dest_files=["res://.godot/imported/glockBullet.png-4627382936b201f58e41a9170d4e2bde.ctex"]
 
 [params]
 

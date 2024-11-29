@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://ctybwajqx53a3"]
 
 [ext_resource type="Script" path="res://characters/ghost.gd" id="1_1a3oa"]
-[ext_resource type="Texture2D" uid="uid://b35d1etmqe3ac" path="res://art/finishedArtwork/ghost.png" id="2_s6rt4"]
+[ext_resource type="Texture2D" uid="uid://b35d1etmqe3ac" path="res://art/finishedArtwork/enemies/ghost.png" id="2_6sjea"]
 [ext_resource type="PackedScene" uid="uid://vt3atwoemuku" path="res://hitAndHurtBox/hurt_box.tscn" id="3_u3btb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ga0cc"]
@@ -23,7 +23,7 @@ shape = SubResource("RectangleShape2D_ga0cc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(2, 0)
-texture = ExtResource("2_s6rt4")
+texture = ExtResource("2_6sjea")
 
 [node name="HurtBox" parent="." instance=ExtResource("3_u3btb")]
 collision_layer = 4
