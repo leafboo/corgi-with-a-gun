@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcu70b5wvqwd1"]
+
+[ext_resource type="Script" path="res://revolver.gd" id="1_kvixo"]
+
+[node name="revolver" type="Node2D"]
+script = ExtResource("1_kvixo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="."]

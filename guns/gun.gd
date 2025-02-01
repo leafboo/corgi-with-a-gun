@@ -3,7 +3,7 @@ class_name Gun
 
 @export var ammo_capacity: int
 @onready var muzzle: Marker2D = $Marker2D
-var glock_bullet = preload("res://bullets/glock_bullet.tscn") # Make a reference to the bullet
+var bullet  # Reference of the bullet initialized in the child class
 
 
 func rotateGun():
@@ -19,10 +19,10 @@ func rotateGun():
 		
 func fireGun():
 	if Input.is_action_just_pressed("fire"):
-		var glock_bullet_instance = glock_bullet.instantiate() # Make instance / clones of that scene
-		get_tree().root.add_child(glock_bullet_instance) # put that instance into a child node of the root in the scene tree
-		glock_bullet_instance.global_position = muzzle.global_position # Set the bullet's position equal to the position of the muzzle
-		glock_bullet_instance.rotation = rotation # Set the rotation of the bullet equal to the rotation of the gun
+		var bullet_instance = bullet.instantiate() # Make instance / clones of that scene
+		get_tree().root.add_child(bullet_instance) # put that instance into a child node of the root in the scene tree
+		bullet_instance.global_position = muzzle.global_position # Set the bullet's position equal to the position of the muzzle
+		bullet_instance.rotation = rotation # Set the rotation of the bullet equal to the rotation of the gun
 		ammo_capacity -= 1
 		print(ammo_capacity)
 		

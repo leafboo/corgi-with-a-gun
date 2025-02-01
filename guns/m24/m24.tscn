@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://0sc1lc1w3ewo"]
+
+[ext_resource type="Script" path="res://guns/m24/m_24.gd" id="1_1l6g5"]
+
+[node name="M24" type="Node2D"]
+script = ExtResource("1_1l6g5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="."]

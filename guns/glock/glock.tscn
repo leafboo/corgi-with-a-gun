@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dhrxx2vp78jnw"]
 
-[ext_resource type="Script" path="res://guns/glock.gd" id="1_wj2t4"]
+[ext_resource type="Script" path="res://guns/glock/glock.gd" id="1_wj2t4"]
 [ext_resource type="Texture2D" uid="uid://bjboimyobifrl" path="res://art/finishedArtwork/guns/glock/glock.png" id="2_q58p0"]
 
 [node name="Glock" type="Node2D"]

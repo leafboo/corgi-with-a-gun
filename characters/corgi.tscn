@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://characters/corgi.gd" id="1_bpwin"]
 [ext_resource type="Texture2D" uid="uid://bscbvc2883ybo" path="res://art/finishedArtwork/corgi/corgi.png" id="2_5f6pu"]
-[ext_resource type="PackedScene" uid="uid://dhrxx2vp78jnw" path="res://guns/glock.tscn" id="3_uqn2d"]
+[ext_resource type="PackedScene" uid="uid://dhrxx2vp78jnw" path="res://guns/glock/glock.tscn" id="3_uqn2d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dh36s"]
 size = Vector2(23, 5)
